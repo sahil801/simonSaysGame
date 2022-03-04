@@ -1,0 +1,111 @@
+
+.cardWrapper{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    border: 10px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: App-logo-spin infinite 10s linear;
+}
+.startBtn{
+    background-color: white;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.score{
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.colorCard {
+    height: 200px;
+    width: 200px;
+}
+.red {
+    background-color: red;
+    // margin-left: 10px;
+    &#flash{
+        background-color: rgb(255,125,125);
+    }
+}
+.blue {
+    background-color: blue;
+    // margin-top: 10px;
+    &#flash{
+        background-color:  rgb(125,125,255);
+    }
+}
+.yellow{
+    background-color: yellow;
+    // margin-left: 10px;
+    // margin-top: 10px;
+    &#flash{
+        background-color: rgb(255,255,125);
+    }
+}
+.green{
+    background-color: green ;
+    &#flash{
+        background-color: rgb(125,255,125);
+    }
+    
+}
+#flash{
+    box-sizing: border-box;
+    border: 3px solid white;
+}
+.Finish{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.closeButton{
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .cardWrapper{
+        width: 300px;
+        height: 300px;
+    }
+    .Finish{
+        width: 300px;
+        height: 300px;
+    }
+    .colorCard{
+        width: 150px;
+        height: 150px;
+    }
+    .startBtn{
+        width: 75px;
+        height: 75px;
+        font-size: 16px;
+    }
+    
+}
